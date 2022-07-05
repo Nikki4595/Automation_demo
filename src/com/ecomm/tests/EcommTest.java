@@ -15,7 +15,7 @@ public class EcommTest {
 		LoginPage lp = new LoginPage();
 		lp.launchBrowser();
 	}
-	@Test
+	@Test(priority=1)
 	public void loginTest() throws Exception {
 		LoginPage lp = new LoginPage();
 		lp.openPage();
@@ -26,7 +26,7 @@ public class EcommTest {
 		lp.clickLoginButton();
 	}
 	
-	@Test(dependsOnMethods = "loginTest")
+	@Test(dependsOnMethods = "loginTest", priority=2)
 	public void addcat() throws Exception {
 		LoginPage lp = new LoginPage();
 		lp.openCatPage();
