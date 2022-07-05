@@ -14,7 +14,7 @@ import com.ecomm.genericPage.TestUtill;
 
 public class LoginPage extends TestUtill {
 
-	
+	//constructor of login page
 	public LoginPage() throws Exception {
 		super();
 		// TODO Auto-generated constructor stub
